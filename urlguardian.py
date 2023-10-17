@@ -3,14 +3,21 @@ import json
 from datetime import datetime
 
 def print_banner():
-    print("*****************************************")
-    print("*      Welcome to URLGuardian           *")
-    print("*      IP/URL Security Scanner          *")
-    print("*                                      *")
-    print("*    Developed by [wh04M1i]          *")
-    print("*    GitHub: [github.com/wh04M1i]     *")
-    print("*                                      *")
-    print("*****************************************")
+    # ANSI escape codes for colors (e.g., \033[91m for red, \033[92m for green)
+    banner_color = '\033[91m'  # Red color
+    reset_color = '\033[0m'  # Reset color
+
+    banner = f"{banner_color}    *****************************************\n" \
+             "    *       Welcome to URLGuardian          *\n" \
+             "    *       IP/URL Security Scanner         *\n" \
+             "    *                                       *\n" \
+             f"    *        Developed by wh04M1i           *\n" \
+             "    *                                       *\n" \
+             "    *****************************************"
+
+    print(banner)
+    print(reset_color) 
+
 
 # Replace 'YOUR_API_KEY' with your VirusTotal API key
 API_KEY = 'YOUR_API_KEY'
