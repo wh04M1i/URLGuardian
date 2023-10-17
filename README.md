@@ -19,25 +19,36 @@ Before using URLGuardian, you'll need the following:
 
 ## Getting Started
 
-1. Clone or download the URLGuardian repository to your local machine.
+1. **Clone or Download the URLGuardian Repository:**
+   - Clone this repository to your local machine using the following command:
+     ```
+     git clone https://github.com/wh04M1i/URLGuardian.git
+     ```
+   - Alternatively, you can download the repository as a ZIP file and extract it to your local directory.
 
-2. Install the required libraries using pip:
+2. **Install Required Libraries:**
+   - Open a terminal or command prompt and navigate to the URLGuardian directory.
+   - Install the required libraries using pip:
+     ```
+     pip install requests
+     ```
 
-   ```
-   pip install requests
-   ```
+3. **Obtain a VirusTotal API Key:**
+   - Sign up for a VirusTotal API key at [VirusTotal](https://www.virustotal.com/).
+   - Replace `'YOUR_API_KEY'` in the script with your actual API key.
 
-3. Obtain a VirusTotal API key by signing up at [VirusTotal](https://www.virustotal.com/). Replace `'YOUR_API_KEY'` in the script with your actual API key.
+4. **Prepare Input File:**
+   - Create an input file (`input.txt`) containing the list of IP addresses and URLs to be scanned.
+   - Each IP address or URL should be listed on a separate line.
 
-4. Prepare an input file (`input.txt`) containing the list of IP addresses and URLs to be scanned. One IP address or URL should be listed on each line.
+5. **Run URLGuardian:**
+   - Execute the URLGuardian script by running the following command:
+     ```
+     python urlguardian.py
+     ```
 
-5. Run the URLGuardian script:
-
-   ```
-   python urlguardian.py
-   ```
-
-6. Scan results will be saved in the `output.txt` file, including detection results, detection ratio, and metadata for each resource.
+6. **View Scan Results:**
+   - Scan results will be saved in the `output.txt` file, including detection results, detection ratio, and metadata for each resource.
 
 ## Customization
 
@@ -45,7 +56,8 @@ You can customize the script by adjusting the input and output file paths to mee
 
 ## Author
 
-- Goverdhan Kumar
+- Developed by [Goverdhan Kumar](https://github.com/wh04M1i)
+- Website: [www.foxfoster.com](http://www.foxfoster.com)
 
 
 ## Acknowledgments
@@ -57,3 +69,4 @@ You can customize the script by adjusting the input and output file paths to mee
 
 For questions or support, please contact pandeygoverdhan@proton.me.
 
+---
