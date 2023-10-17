@@ -2,6 +2,16 @@ import requests
 import json
 from datetime import datetime
 
+def print_banner():
+    print("*****************************************")
+    print("*      Welcome to URLGuardian           *")
+    print("*      IP/URL Security Scanner          *")
+    print("*                                      *")
+    print("*    Developed by [wh04M1i]          *")
+    print("*    GitHub: [github.com/wh04M1i]     *")
+    print("*                                      *")
+    print("*****************************************")
+
 # Replace 'YOUR_API_KEY' with your VirusTotal API key
 API_KEY = 'YOUR_API_KEY'
 
@@ -32,6 +42,8 @@ def get_scan_report(resource):
 # Read input from a text file
 input_file = 'input.txt'
 output_file = 'output.txt'
+
+print_banner()  
 
 with open(output_file, 'a') as output:
     output.write(f"Scan Date and Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
